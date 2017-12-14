@@ -11,7 +11,7 @@ export default class Weather extends Component {
                 style={styles.container}>
                 <View style={styles.weatherView}>
                     <Ionicons color="white" size={144} name="ios-rainy" />
-                    <Text style={styles.temp}>10º</Text>
+                    <Text style={styles.temp}>{this.props.temp}º</Text>
                 </View>
                 <View style={styles.weatherDesc}>
                     <Text style={styles.title}>Title</Text>
