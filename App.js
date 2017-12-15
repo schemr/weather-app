@@ -33,7 +33,7 @@ export default class App extends Component {
 					console.log(data)
 					this.setState({
 						temp: data.main.temp,
-						condition: data.weather[0].name,
+						condition: data.weather[0].main,
 						isLoaded: true
 					})
 				}
@@ -41,12 +41,12 @@ export default class App extends Component {
 	}
 
 	render() {
-		const { isLoaded, error } = this.state
+		const { isLoaded, error, temp, condition } = this.state;
 		return (
 			<View style={styles.container}>
 				<StatusBar hidden={true} />
 				{ isLoaded ? (
-					<Weather temp={this.state.temp} condition={this.state.condition} />
+					<Weather temp={Math.floor(temp - 273.15)} condition={condition} />
 				) : (
 					<View style={styles.loading}>
 						<Text style={styles.loadingText}>Loading Weather...</Text>
