@@ -26,8 +26,8 @@ const weatherCondition = {
     },
     Clouds:{
         colors: ["#D7D2CC", "#304352"],
-        title: "Clouds~~~~",
-        subTitle: "many may clouds",
+        title: "Cloud~~~~",
+        subTitle: "아 왜 구름이 끼고 날리야",
         icon: "weather-cloudy"
     },
     Snow:{
