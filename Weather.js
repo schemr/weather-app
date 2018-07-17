@@ -51,13 +51,12 @@ const weatherCondition = {
     Mist: {
         colors: ["#D7D2CC", "#304352"],
         title: "Mist!",
-        subTitle: "It's like you have no glasses on.",
+        subTitle: "It's like you no glasses on.",
         icon: "weather-fog"
     }
 }
 
 function Weather({temp, condition}) {
-    console.log(condition)
     return (
         <LinearGradient 
             colors={weatherCondition[condition].colors} 

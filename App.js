@@ -30,7 +30,6 @@ export default class App extends Component {
 		fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&APPID=${API_KEY}`)
 			.then(response => response.json())
 			.then(data => {
-					console.log(data)
 					this.setState({
 						temp: data.main.temp,
 						condition: data.weather[0].main,
