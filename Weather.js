@@ -19,7 +19,7 @@ const weatherCondition = {
         icon: "weather-sunny"
     },
     Thunderstorm:{
-        colors: ["#00ECBC", "#007ADF"],
+        colors: ["#00ECBC", "#007ADE"],
         title: "Thunderstorm ㅠㅠ",
         subTitle: "Scary",
         icon: "weather-lightning"
