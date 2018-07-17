@@ -57,7 +57,6 @@ const weatherCondition = {
 }
 
 function Weather({temp, condition}) {
-    console.log(condition)
     return (
         <LinearGradient 
             colors={weatherCondition[condition].colors} 
